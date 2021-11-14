@@ -13,7 +13,7 @@ library(tidyverse)
 library(janitor)
 library(here)
 library(hexbin)
-
+library(viridis)
 ```
 
 # Read in the data
@@ -33,8 +33,15 @@ ces_demographics <- read.csv(here("data", "ces3demographics.csv")) %>%
 ```{r}
 ggplot(data = ces_demographics, aes(x = white, y = ces_3_0_score)) +
   geom_hex()+
+   scale_fill_gradient(low = "dimgrey", high = "dodgerblue") + 
   labs(x = "White population (%)",
-       y = "CES 3.0 Score")
+       y = "CES 3.0 Score") +
+  theme_minimal()
+
+
+```
+
+```{r}
 
 ```
 
