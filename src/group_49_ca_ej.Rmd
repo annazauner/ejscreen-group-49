@@ -7,8 +7,8 @@ output: html_document
 
 # Set up
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+```{r setup, include=TRUE, warning=FALSE, message=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
 library(tidyverse)
 library(janitor)
 library(here)
@@ -40,6 +40,7 @@ ggplot(data = ces_demographics, aes(x = white, y = ces_3_0_score)) +
 
 
 ```
+**Figure 1.** The relationship between % white population and the aggregate CalEnviroScreen Community Pollution Score across CA census tracts are portrayed in a density map. 
 
 ```{r}
 
