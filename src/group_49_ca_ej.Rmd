@@ -42,7 +42,8 @@ ggplot(data = ces_demographics, aes(x = white, y = ces_3_0_score)) +
 ```
 **Figure 1.** The relationship between % white population and the aggregate CalEnviroScreen Community Pollution Score across CA census tracts are portrayed in a density map. 
 
-```{r}
+A high CES score indicates communities are highly burdened by pollution from various sources and are most vulnerable to the adverse health effects from those pollutants. The overall trend of the graph suggests predominantly white communities have a lower CES score when compared to predominately non-white communities.  
 
-```
+**Citation** Office of Environmental Health and Hazard Assessment, Approaches for  Identifying Disadvantaged Communities 1 (Aug.  2014), available at http://oehha.ca.gov/ej/pdf/ApproachesnIdentifyDisadvantagedCommunitiesAug2014.pdf 
+
 
